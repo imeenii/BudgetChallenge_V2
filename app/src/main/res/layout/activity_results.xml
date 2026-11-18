@@ -1,0 +1,75 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8F3"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bilan de la simulation"
+            android:textColor="#145A32"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:padding="22dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Résumé financier"
+                android:textColor="#2E8B57"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/txtResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Les résultats apparaîtront ici."
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:lineSpacingExtra="8dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBackResults"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Retour au tableau de bord"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#245B45"
+            android:stateListAnimator="@null" />
+        <Button
+            android:id="@+id/btnReplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rejouer"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#245B45"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

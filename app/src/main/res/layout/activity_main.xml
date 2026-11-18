@@ -1,0 +1,68 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:text="Budget Challenge"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="serif"
+        android:gravity="start"
+        android:text="Épargnez, dépensez et faites fructifier votre argent\nle tout dans un seul endroit simple et pratique."
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="854dp"
+        android:layout_height="292dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Wallet image"
+        android:rotation="26"
+        android:rotationY="2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wallet" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/white"
+        android:text="Commencer →"
+        android:textColor="#063B2E"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="355dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:text="À propos →"
+        android:textColor="#063B2E"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

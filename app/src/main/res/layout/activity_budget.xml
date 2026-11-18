@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <!-- BOUTON RETOUR -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#E8F0E8"
+            android:text="← Retour"
+            android:textColor="#174C3B"
+            android:textStyle="bold"/>
+
+        <!-- TITRE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Configuration du budget"
+            android:textColor="#263B2A"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="Organisez vos revenus et vos dépenses."
+            android:textColor="#526B54"
+            android:textSize="15sp"/>
+
+        <!-- REVENU -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💰  Revenu mensuel"
+            android:textColor="#263B2A"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etIncome"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/card_budget"
+            android:padding="12dp"
+            android:hint="1800 DT"
+            android:inputType="numberDecimal"
+            android:textColor="#263B2A"
+            android:textColorHint="#657565"/>
+
+        <!-- DEPENSES FIXES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="🏠  Dépenses fixes"
+            android:textColor="#263B2A"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- LOYER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/dashboard_card">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🏠  Loyer"
+                android:textColor="#263B2A"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etRent"
+                android:layout_width="105dp"
+                android:layout_height="45dp"
+                android:hint="500"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColor="#263B2A"
+                android:textColorHint="#657565"
+                android:backgroundTint="@color/button_green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" DT"
+                android:textColor="#263B2A"/>
+        </LinearLayout>
+
+        <!-- FACTURES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/dashboard_card">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="💡  Factures"
+                android:textColor="#263B2A"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etBills"
+                android:layout_width="105dp"
+                android:layout_height="45dp"
+                android:hint="200"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColor="#263B2A"
+                android:textColorHint="#657565"
+                android:backgroundTint="@color/button_green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" DT"
+                android:textColor="#263B2A"/>
+        </LinearLayout>
+
+        <!-- DEPENSES VARIABLES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="🛍️  Dépenses variables"
+            android:textColor="#263B2A"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- ALIMENTATION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/dashboard_card">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🛒  Alimentation"
+                android:textColor="#263B2A"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etFood"
+                android:layout_width="105dp"
+                android:layout_height="45dp"
+                android:hint="350"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColor="#263B2A"
+                android:textColorHint="#657565"
+                android:backgroundTint="@color/button_green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" DT"
+                android:textColor="#263B2A"/>
+        </LinearLayout>
+
+        <!-- TRANSPORT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/dashboard_card">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🚗  Transport"
+                android:textColor="#263B2A"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etTransport"
+                android:layout_width="105dp"
+                android:layout_height="45dp"
+                android:hint="150"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColor="#263B2A"
+                android:textColorHint="#657565"
+                android:backgroundTint="@color/button_green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" DT"
+                android:textColor="#263B2A"/>
+        </LinearLayout>
+
+        <!-- AUTRES DEPENSES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/dashboard_card">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="💳  Autres dépenses"
+                android:textColor="#263B2A"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etOther"
+                android:layout_width="105dp"
+                android:layout_height="45dp"
+                android:hint="200"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColor="#263B2A"
+                android:textColorHint="#657565"
+                android:backgroundTint="@color/button_green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" DT"
+                android:textColor="#263B2A"/>
+        </LinearLayout>
+
+        <!-- OBJECTIF D'EPARGNE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯  Objectif d'épargne"
+            android:textColor="#263B2A"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etGoal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_budget"
+            android:padding="12dp"
+            android:hint="1200 DT"
+            android:inputType="numberDecimal"
+            android:textColor="#263B2A"
+            android:textColorHint="#657565"/>
+
+        <!-- DUREE DE SIMULATION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="📅  Durée de la simulation (mois)"
+            android:textColor="#263B2A"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etDuration"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_budget"
+            android:padding="12dp"
+            android:hint="3"
+            android:inputType="number"
+            android:textColor="#263B2A"
+            android:textColorHint="#657565"/>
+
+        <!-- BOUTON DEMARRER -->
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/button_green"
+            android:text="Démarrer la simulation →"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>

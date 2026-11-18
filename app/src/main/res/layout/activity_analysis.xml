@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8F3"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Analyse financière"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="#145A32"
+            android:gravity="center"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Découvrez votre situation et choisissez la meilleure stratégie."
+            android:textSize="15sp"
+            android:textColor="#64816D"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <!-- Résumé financier -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Résumé de votre budget"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#145A32"
+                android:paddingBottom="12dp" />
+
+            <TextView
+                android:id="@+id/txtAnalysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Votre analyse apparaîtra ici."
+                android:textSize="16sp"
+                android:textColor="#344B3B"
+                android:lineSpacingExtra="8dp" />
+
+        </LinearLayout>
+
+        <!-- Stratégie A -->
+        <TextView
+            android:id="@+id/txtStrategyA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="18dp"
+            android:background="#E3F2FD"
+            android:textColor="#174A75"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Stratégie B -->
+        <TextView
+            android:id="@+id/txtStrategyB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="18dp"
+            android:background="#FFF3E0"
+            android:textColor="#945600"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Stratégie C -->
+        <TextView
+            android:id="@+id/txtStrategyC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="18dp"
+            android:background="#E8F5E9"
+            android:textColor="#1B5E20"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Recommandation -->
+        <TextView
+            android:id="@+id/txtRecommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="20dp"
+            android:background="#DDEFE3"
+            android:textColor="#145A32"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBackAnalysis"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="25dp"
+            android:text="Retour au tableau de bord"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#245B45"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</ScrollView>
